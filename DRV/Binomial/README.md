@@ -11,9 +11,9 @@ The **Binomial distribution** models the number of successes in a fixed number o
 - **Support**  
   k = 0, 1, 2, …, n
 
-### Probability Mass Function (PMF)
+### Probability Mass Function (PMF)\
 
-P(X = k) = C(n, k) * p^k * (1 − p)^(n − k)
+$$P(X = k) = \binom{n}{k} * p^k * (1 − p)^(n − k)$$
 
 where `C(n, k)` is the binomial coefficient (`n! / (k! * (n − k)!`).
 
