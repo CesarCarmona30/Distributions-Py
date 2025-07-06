@@ -15,7 +15,7 @@ The **Binomial distribution** models the number of successes in a fixed number o
 
 $$P(X = k) = \binom{n}{k} p^k (1 − p)^{n − k}$$
 
-where `C(n, k)` is the binomial coefficient (`n! / (k! * (n − k)!`).
+where $\binom{n}{k}$ is the binomial coefficient $\frac{n!}{k! (n − k)!}$.
 
 ### Cumulative Distribution Function (CDF)
 
