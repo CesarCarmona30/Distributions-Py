@@ -6,7 +6,7 @@
 
 - **Parameters**
   - `p` - success: 0 ≤ p ≤ 1 
-  - 'q` - failure: 1 - p
+  - `q` - failure: 1 - p
 
 
 ### Probability Mass Function (PMF)
