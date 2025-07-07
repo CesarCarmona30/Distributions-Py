@@ -11,9 +11,9 @@
 
 ### Probability Mass Function (PMF)
 
-$$\[ P(X = x) = 
+$$P(X = x) = 
     \begin{cases}
-      p^x(1-p)^{1-x}, & \quad x = 0,1
+      p^x(1-p)^{1-x}, & \quad x = 0,1\\
       0, & \quad otherwise
     \end{cases}
-\]$$
+$$
