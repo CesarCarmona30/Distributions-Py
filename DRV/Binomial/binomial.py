@@ -3,10 +3,20 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 
+def fact(n: int) -> int:
+    if n == 1 or n == 0:
+        return 1
+    else:
+        return n * fact(n - 1)
+
+def comb(n: int, r: int) -> int:
+    """Combinatory"""
+    return (fact(n)/(fact(n - r) * fact(r)))
+
 
 def pmf(k: int, n: int, p: float) -> float:
     """Probability mass function for Binomial(n, p) at value k."""
-    return math.comb(n, k) * p**k * (1 - p)**(n - k)
+    return comb(n, k) * p**k * (1 - p)**(n - k)
 
 
 def cdf(k: int, n: int, p: float) -> float:
