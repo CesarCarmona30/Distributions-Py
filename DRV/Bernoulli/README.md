@@ -17,3 +17,8 @@ $$P(X = x) =
       0, & \quad otherwise
     \end{cases}
 $$
+
+### Mean and Variance
+
+- Mean: $E[X] = \mu = p$
+- Variancce: $Var(x) = \sigma = p(1-p)$
