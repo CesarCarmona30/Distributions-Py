@@ -4,7 +4,7 @@ The **Binomial distribution** models the number of successes in a fixed number o
 
 ## Theory
 
-$$x~Bin(n, p) o Bin(x; n, p)$$
+$$x~Bin(n, p) - Bin(x; n, p)$$
 
 - **Parameters**  
   - `n` — number of trials (integer, n ≥ 0)  
