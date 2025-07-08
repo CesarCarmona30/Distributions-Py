@@ -4,6 +4,8 @@
 
 ## Theory
 
+$$x~Be(p) o Be(x; p)$$
+
 - **Parameters**
   - `p` - success: 0 ≤ p ≤ 1 
   - `q` - failure: 1 - p

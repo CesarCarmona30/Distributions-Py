@@ -4,6 +4,8 @@ The **Binomial distribution** models the number of successes in a fixed number o
 
 ## Theory
 
+$$x~Bin(n, p) o Bin(x; n, p)$$
+
 - **Parameters**  
   - `n` — number of trials (integer, n ≥ 0)  
   - `p` — probability of success on each trial (0 ≤ p ≤ 1)
