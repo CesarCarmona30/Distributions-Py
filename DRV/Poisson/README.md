@@ -16,6 +16,10 @@ $$
 
 ### Cumulative Distribution Function (CDF)
 
+$$P(X \leq x) = F(x; \lambda) = \sum_{i=0}^{x} \frac{e^{\lambda} \lambda^i}{i!}$$
 
 
 ### Mean and Variance
+
+- Mean: $E[X] = \lambda$
+- Variance: $Var(x) = \lambda$
