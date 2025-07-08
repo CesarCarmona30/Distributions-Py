@@ -8,7 +8,7 @@
 
 $$p(x; k) =
     \begin{cases}
-     \frac{\euler^{\lambda} \lambda^x}{x!}, & \quad x = 0, 1, 2, \dots; \lambda > 0\\
+     \frac{e^{\lambda} \lambda^x}{x!}, & \quad x = 0, 1, 2, \dots; \lambda > 0\\
      0, & \quad otherwise
     \end{cases}
 $$
