@@ -22,4 +22,4 @@ $$P(X \leq x) = F(x; \lambda) = \sum_{i=0}^{x} \frac{e^{\lambda} \lambda^i}{i!}$
 ### Mean and Variance
 
 - Mean: $E[X] = \frac{nM}{N} $ 
-- Variance: $Var(x) = n\frac{M}{N}(1-\fraq{M}{N})(\fraq{N-n}{N-1})$
+- Variance: $Var(x) = n\frac{M}{N}(1-\frac{M}{N})(\frac{N-n}{N-1})$
