@@ -16,7 +16,7 @@ $$
 
 ### Cumulative Distribution Function (CDF)
 
-$$P(X \leq x) = F(x; \lambda) = \sum_{i=0}^{x} \frac{e^{\lambda} \lambda^i}{i!}$$
+$$P(X \leq x) = \sum_{i=0}^{x} \frac{\binom{M}{i} \binom{N-M}{n-i}}{\binom{N}{n}}$$
 
 
 ### Mean and Variance
