@@ -1,6 +1,5 @@
-import math
+# binomial.py
 import random
-import numpy as np
 import matplotlib.pyplot as plt
 
 def fact(n: int) -> int:
@@ -10,54 +9,29 @@ def fact(n: int) -> int:
         return n * fact(n - 1)
 
 def comb(n: int, r: int) -> int:
-    """Combinatory"""
-    return (fact(n)/(fact(n - r) * fact(r)))
-
+    return fact(n) // (fact(n - r) * fact(r))
 
 def pmf(k: int, n: int, p: float) -> float:
-    """Probability mass function for Binomial(n, p) at value k."""
     return comb(n, k) * p**k * (1 - p)**(n - k)
 
-
 def cdf(k: int, n: int, p: float) -> float:
-    """Cumulative distribution function for Binomial(n, p) up to k."""
     return sum(pmf(i, n, p) for i in range(k + 1))
 
-
 def sample(n: int, p: float, size: int = 1) -> list[int]:
-    """Generate `size` samples from Binomial(n, p)."""
     return [sum(random.random() < p for _ in range(n)) for _ in range(size)]
 
-
-if __name__ == "__main__":
-    # Parameters
-    n, p = 10, 0.3
-    ks = list(range(n + 1))
-
-    # Compute PMF and CDF
-    pmf_vals = [pmf(k, n, p) for k in ks]
-    cdf_vals = [cdf(k, n, p) for k in ks]
-
-    print("Binomial PMF:")
-    for k, prob in zip(ks, pmf_vals):
-        print(f"P(X={k}) = {prob:.4f}")
-
-    print("\nBinomial CDF:")
-    for k, cum_prob in zip(ks, cdf_vals):
-        print(f"P(X≤{k}) = {cum_prob:.4f}")
-
-    # Plot PMF
+def pmf_plot(ks: list[int], pk: list[float], n: int, p: float, x_label: str):
     plt.figure()
-    plt.bar(ks, pmf_vals)
-    plt.title(f"Binomial PMF (n={n}, p={p})")
-    plt.xlabel("Number of successes k")
-    plt.ylabel("Probability")
+    plt.bar(ks, pk)
+    plt.title(f"Binomial PMF (n={n}, p={p:.3f})")
+    plt.xlabel(x_label)
+    plt.ylabel("Probability: f(k) = P(X = k)")
     plt.show()
 
-    # Plot CDF
+def cdf_plot(ks: list[int], cum_prob: list[float], n: int, p: float):
     plt.figure()
-    plt.step(ks, cdf_vals, where='post')
-    plt.title(f"Binomial CDF (n={n}, p={p})")
-    plt.xlabel("k")
-    plt.ylabel("F(k)")
+    plt.step(ks, cum_prob, where="post")
+    plt.title(f"Binomial PMF (n={n}, p={p:.3f})")
+    plt.xlabel("X = k")
+    plt.ylabel("F(k) = P(X <= k)")
     plt.show()
