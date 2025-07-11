@@ -2,6 +2,18 @@
 
 The **Binomial distribution** models the number of successes in a fixed number of independent Bernoulli trials, each with the same probability of success.
 
+Many experiments fit exactly or approximately the following set of requirements:
+
+1. The experiment consists of a sequence of **n** smaller experiments, called **trials**, where **n** is fixed in advance.
+
+2. Each trial results in one of the same two possible outcomes (**dichotomous trials**), which are labeled as **success (S)** and **failure (F)**.
+
+3. The trials are **independent**, meaning that the outcome of any particular trial does not affect the outcome of any other trial.
+
+4. The **probability of success**, denoted by **p**, remains constant from trial to trial.
+
+A **binomial experiment** is made up of several **Bernoulli trials**.
+
 ## Theory
 
 $$x~Bin(n, p) - Bin(x; n, p)$$
