@@ -20,6 +20,12 @@ def cdf(k: int, n: int, p: float) -> float:
 def sample(n: int, p: float, size: int = 1) -> list[int]:
     return [sum(random.random() < p for _ in range(n)) for _ in range(size)]
 
+def mean(n: int, p: float) -> float:
+    return n * p
+
+def var(n: int, p: float) -> float:
+    return n * p * (1 - p)
+
 def pmf_plot(ks: list[int], pk: list[float], n: int, p: float, x_label: str):
     plt.figure()
     plt.bar(ks, pk)
