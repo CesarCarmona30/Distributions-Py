@@ -14,16 +14,15 @@ Many experiments fit exactly or approximately the following set of requirements:
 
 A **binomial experiment** is made up of several **Bernoulli trials**.
 
+Use the Binomial distribution when you have a fixed number \(n\) of independent trials, each with the same success probability \(p\), and you want the probability of exactly \(k\) successes.
+
 ## Theory
 
-$$x~Bin(n, p) - Bin(x; n, p)$$
+$$X \sim \mathrm{Binomial}(n, p)\quad\text{or}\quad \mathrm{Bin}(x; n, p)$$
 
 - **Parameters**  
   - `n` — number of trials (integer, n ≥ 0)  
   - `p` — probability of success on each trial (0 ≤ p ≤ 1)
-
-- **Support**  
-  k = 0, 1, 2, …, n
 
 ### Probability Mass Function (PMF)
 
