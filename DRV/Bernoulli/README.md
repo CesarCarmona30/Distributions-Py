@@ -1,15 +1,13 @@
 # Bernoulli Distribution
 
-**Bernoulli distribution** only have two possible results, mutually excludes as name sucess and failure
+**Bernoulli distribution** has exactly two possible outcomes-mutually exclusive-and is usually labeled "success" and "failure".
 
 ## Theory
 
-$$x~Be(p) o Be(x; p)$$
+$$x \sim \mathrm{Bernoulli}(p)\quad\text{or}\quad\mathrm{Bern}(x; p)$$
 
-- **Parameters**
-  - `p` - success: 0 ≤ p ≤ 1 
-  - `q` - failure: 1 - p
-
+- **Parameter**
+– `p` : probability of success, with 0 ≤ p ≤ 1 (we usually write q = 1 – p for the failure probability)
 
 ### Probability Mass Function (PMF)
 
@@ -23,4 +21,6 @@ $$
 ### Mean and Variance
 
 - Mean: $E[X] = \mu = p$
-- Variancce: $Var(x) = \sigma = p(1-p)$
+- Variance: $Var(x) = \sigma = p(1-p)$
+
+** Standard deviation: $\(\sqrt{p(1-p)}\)$.
