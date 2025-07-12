@@ -29,7 +29,7 @@ def var(n: int, p: float) -> float:
 def pmf_plot(ks: list[int], pk: list[float], n: int, p: float, x_label: str):
     plt.figure()
     plt.bar(ks, pk)
-    plt.title(f"Binomial PMF (n={n}, p={p:.3f})")
+    plt.title(f"Binomial PMF (n={n}, p={p:.2f})")
     plt.xlabel(x_label)
     plt.ylabel("Probability: f(k) = P(X = k)")
     plt.show()
@@ -37,7 +37,7 @@ def pmf_plot(ks: list[int], pk: list[float], n: int, p: float, x_label: str):
 def cdf_plot(ks: list[int], cum_prob: list[float], n: int, p: float):
     plt.figure()
     plt.step(ks, cum_prob, where="post")
-    plt.title(f"Binomial PMF (n={n}, p={p:.3f})")
+    plt.title(f"Binomial CDF (n={n}, p={p:.2f})")
     plt.xlabel("X = k")
     plt.ylabel("F(k) = P(X <= k)")
     plt.show()
