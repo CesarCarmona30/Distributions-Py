@@ -3,19 +3,19 @@
 This repository contains implementations and examples of common probability distributions, divided into:
 
 - **CRV** (Continuous Random Variables)  
-  - Exponencial  
-  - Gamma  
-  - Gaussian-Normal  
-  - Uniform  
-  - Weibull  
+  - [Exponencial](./CRV/Exponencial)
+  - [Gamma](./CRV/Gamma)
+  - [Gaussian-Normal](./CRV/Gaussian-Normal)
+  - [Uniform](./CRV/Uniform)
+  - [Weibull](./CRV/Weibull)
 
 - **DRV** (Discrete Random Variables)  
-  - Bernoulli  
-  - Binomial  
-  - Geometric  
-  - Hypergeometric  
-  - Pascal  
-  - Poisson  
+  - [Bernoulli](./DRV/Bernoulli)
+  - [Binomial](./DRV/Binomial)
+  - [Geometric](./DRV/Geometric) 
+  - [Hypergeometric](./DRV/Hypergeometric)
+  - [Pascal](./DRV/Pascal)
+  - [Poisson](./DRV/Poisson)
 
 Each subdirectory includes:
 - A `README.md` with theory, formulae, parameters, and usage examples.
