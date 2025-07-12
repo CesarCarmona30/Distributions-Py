@@ -8,7 +8,7 @@ $$X \sim \mathrm{Poisson}(\lambda)$$
 
 - **Parameter**  
 
-– `λ` : average rate $(\(\lambda>0\))$
+ – `λ` : average rate $\(\lambda>0\)$
 
 ### Probability Mass Function (PMF)
 
