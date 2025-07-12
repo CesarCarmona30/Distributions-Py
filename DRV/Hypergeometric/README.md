@@ -13,19 +13,19 @@ The probability distribution of X depends on the parameters n, M, and N, so we a
 
 ## Theory
 
-$$x~h(n, M, N) - h(x; n, M, N)$$
+$$X \sim \mathrm{Hypergeometric}(N, M, n)\quad\text{or}\quad h(x; N,M,n)$$
 
 - **Parameters**  
-  - `x` — Number of observed successes in the sample
-  - `n` — Sample size (number of draws)  
-  - `M` — Total number of successes in the population
-  - `N` — Total population size
+  - `x` — Number of observed success in the sample
+  - `n` — Number of draws (sample size)
+  - `M` — Number of successes in the population
+  - `N` — Population size
 
 ### Probability Mass Function (PMF)
 
 $$P(X = x) =
     \begin{cases}
-     \frac{\binom{M}{x} \binom{N-M}{n-x}}{\binom{N}{n}}, & \quad x = 0, 1, 2, \dots min(M > 0, n)\\
+     \frac{\binom{M}{x} \binom{N-M}{n-x}}{\binom{N}{n}}, & \quad x = \max(0,\,n+M-N),\,\dots,\,\min(M,\,n)\\
      0, & \quad otherwise
     \end{cases}
 $$
