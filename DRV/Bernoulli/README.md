@@ -7,7 +7,10 @@
 $$x \sim \mathrm{Bernoulli}(p)\quad\text{or}\quad\mathrm{Bern}(x; p)$$
 
 - **Parameter**
-– `p` : probability of success, with 0 ≤ p ≤ 1 (we usually write q = 1 – p for the failure probability)
+ – `p` : probability of success, with 0 ≤ p ≤ 1 (we usually write q = 1 – p for the failure probability)
+
+- **Suport**
+ - `x = 0` (failure) or `x = 1` (success)
 
 ### Probability Mass Function (PMF)
 
@@ -21,6 +24,6 @@ $$
 ### Mean and Variance
 
 - Mean: $E[X] = \mu = p$
-- Variance: $Var(x) = \sigma = p(1-p)$
+- Variance: $Var(x) = \sigma^2 = p(1-p)$
 
-** Standard deviation: $\(\sqrt{p(1-p)}\)$.
+** Standard deviation: \sigma = $\(\sqrt{p(1-p)}\)$.
