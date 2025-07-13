@@ -16,10 +16,10 @@ The probability distribution of X depends on the parameters n, M, and N, so we a
 $$X \sim \mathrm{Hypergeometric}(N, M, n)\quad\text{or}\quad h(x; N,M,n)$$
 
 - **Parameters**  
-  - `x` — Number of observed success in the sample
-  - `n` — Number of draws (sample size)
-  - `M` — Number of successes in the population
-  - `N` — Population size
+  - `x`: Number of observed success in the sample
+  - `n`: Number of draws (sample size)
+  - `M`: Number of successes in the population
+  - `N`: Population size
 
 ### Probability Mass Function (PMF)
 
@@ -40,3 +40,4 @@ $$P(X \leq x) = \sum_{i=0}^{x} \frac{\binom{M}{i} \binom{N-M}{n-i}}{\binom{N}{n}
 
 - Mean: $E[X] = \frac{nM}{N} $ 
 - Variance: $Var(x) = n\frac{M}{N}(1-\frac{M}{N})(\frac{N-n}{N-1})$
+- **Standard Deviation: $\sqrt{\mathrm{Var}(X)}$
