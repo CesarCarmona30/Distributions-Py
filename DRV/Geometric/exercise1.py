@@ -16,12 +16,12 @@ cum = [geo.cdf(x, p) for x in xs]
 
 print("Probability Mass Function PMF")
 for x, px in zip(xs, ps):
-  print(f"P(X = {x}) = {px:.3f}")
+  print(f"P(X = {x}) = {px:.5f}")
 
 print()
 print("Cumulative Distribution Function CDF")
 for x, cx, in zip(xs, cum):
-  print(f"P(X <= {x}) = {cx:.3f}")
+  print(f"P(X <= {x}) = {cx:.5f}")
 
 print()
 
