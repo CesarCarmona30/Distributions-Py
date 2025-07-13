@@ -15,7 +15,7 @@ $$
 ### Cumulative Distribution Function CDF
 
 $$
-P(X \le x) = F(x; a, b) = (b - a)^{-1} \[ \int_{a}^{x} \,dx \] =
+P(X \le x) = F(x; a, b) = (b - a)^{-1} \int_{a}^{x} dx =
     \begin{cases}
       0, & \quad x < a.\\
       \frac{x - a}{b - a}, & \quad a \le x \le b\\
