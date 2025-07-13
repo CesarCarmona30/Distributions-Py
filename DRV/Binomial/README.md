@@ -21,8 +21,11 @@ Use the Binomial distribution when you have a fixed number \(n\) of independent 
 $$X \sim \mathrm{Binomial}(n, p)\quad\text{or}\quad \mathrm{Bin}(x; n, p)$$
 
 - **Parameters**  
-  - `n` — number of trials (integer, n ≥ 0)  
-  - `p` — probability of success on each trial (0 ≤ p ≤ 1)
+  - `n`: number of trials (integer, n ≥ 0)  
+  - `p`: probability of success on each trial (0 ≤ p ≤ 1)
+
+- **Support**
+  - `x`: 0, 1, 2, 3, ...
 
 ### Probability Mass Function (PMF)
 
@@ -41,3 +44,4 @@ $$F(k) = P(X ≤ k) = \sum_{i=0}^{k} \binom{n}{i} p^i (1 − p)^{n − i}$$
 
 - Mean: $E[X] = n * p$  
 - Variance: $Var(X) = n * p * (1 − p)$
+- **Standard Deviation: $\sigma = \sqrt{np(1-p)}$
