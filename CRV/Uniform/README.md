@@ -28,4 +28,4 @@ $$
 - Mean: $E[X] = \mu = \frac{A + B}{2}$
 - Variance: $Var(x) = \sigma^2 = \frac{(B - A)^2}{12}$
 
-\*\* Standard deviation: $\sigma = \(\sqrt{\sigma})$.
+\*\* Standard deviation: $\sigma = \sqrt{Var(x)}$.
