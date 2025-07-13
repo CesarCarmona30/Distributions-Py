@@ -15,8 +15,8 @@ ps = [bin.pmf(x, n, p) for x in xs]
 cum = [bin.cdf(x, n, p) for x in xs]
 
 print(f"Probability Mass Function: ")
-for x, p in zip(xs, ps):
-  print(f"P(X = {x}) = {p:.3f}")
+for x, px in zip(xs, ps):
+  print(f"P(X = {x}) = {px:.3f}")
 
 print()
 print("Cumulative distribution function")
