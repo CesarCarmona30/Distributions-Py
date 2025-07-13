@@ -6,9 +6,9 @@ The Geometric Distribution models the number of trials needed to get the first s
 
 $$X \sim \mathrm{Geom}(p)$$
 
-**Parameter**  
-– `p`: success probability, 0 < p ≤ 1  
-
+- **Parameter**  
+  – `p`: success probability, 0 < p ≤ 1
+  - `x`: Trials to first success, 1, 2, 3, ...
 
 ### Probability Mass Function (PMF)
 
@@ -23,4 +23,4 @@ $$P(X \le x) = 1 - q^x$$
 
 - Mean: $E[X] = \frac{1}{p}$
 - Variance: $Var(x) = \frac{1 - p}{p^2}$
-
+- **Standard Deviation: $\sqrt{\mathrm{Var}(X)}$
