@@ -1,41 +1,44 @@
 # Uniform Distribution
 
+The **Continuous Uniform distribution** models outcomes that are equally likely across a fixed interval [A, B]. It is often used when there is no reason to favor any sub‑interval over another within the range.
+
+Use the Uniform distribution when you need a simple model for a continuous variable that could fall anywhere between A and B with equal probability.
+
 ## Theory
 
-$$x \sim \mathrm{U}(A, B)\quad\text{or}\quad\mathrm{U}(x; A, B)$$
+$$X \sim \mathrm{U}(A, B)\quad\text{or}\quad f(x; A, B)$$
 
 - **Parameters**
 
-  - `A`:
-  - `B`:
+  - `A`: lower bound of the interval (real, A < B)
+  - `B`: upper bound of the interval (real, B > A)
 
 - **Support**
-  - `x`:
+  - `x ∈ [A, B]`
 
-### Probability Mass Function PMF
+### Probability Density Function (PDF)
 
 $$
-f(x; A, B) =
+ f(x; A, B) =
     \begin{cases}
-      \frac{1}{B-A}, & \quad A \le x \le B\\
-      0, & \quad otherwise
+      \frac{1}{B - A}, & A \le x \le B \\
+      0, & \text{otherwise}
     \end{cases}
 $$
 
-### Cumulative Distribution Function CDF
+### Cumulative Distribution Function (CDF)
 
 $$
-P(X \le x) = F(x; a, b) = (b - a)^{-1} \int_{a}^{x} dx =
+ F(x; A, B) = P(X \le x) =
     \begin{cases}
-      0, & \quad x < a.\\
-      \frac{x - a}{b - a}, & \quad a \le x \le b\\
-      1, & \quad x > b
+      0, & x < A \\
+      \frac{x - A}{B - A}, & A \le x \le B \\
+      1, & x > B
     \end{cases}
 $$
 
 ### Mean and Variance
 
-- Mean: $E[X] = \mu = \frac{A + B}{2}$
-- Variance: $Var(x) = \sigma^2 = \frac{(B - A)^2}{12}$
-
-\*\* Standard deviation: $\sigma = \sqrt{Var(x)}$.
+- **Mean:** \(E[X] = \frac{A + B}{2}\)
+- **Variance:** \(\mathrm{Var}(X) = \frac{(B - A)^2}{12}\)
+- **Standard Deviation:** \(\sigma = \frac{B - A}{\sqrt{12}}\)
