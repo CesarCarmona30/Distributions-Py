@@ -2,6 +2,16 @@
 
 ## Theory
 
+$$x \sim \mathrm{U}(A, B)\quad\text{or}\quad\mathrm{U}(x; A, B)$$
+
+- **Parameters**
+  – `A`:
+
+  - `B`:
+
+- **Support**
+  - `x = 0` (failure) or `x = 1` (success)
+
 ### Probability Mass Function PMF
 
 $$
