@@ -14,13 +14,13 @@ $$X \sim N(\mu, \sigma^2)\quad\text{or}\quad f(x; \mu, \sigma^2)$$
   - `σ > 0`: standard deviation (real)
 
 - **Support**
-  - `x ∈ (-\infty,\infty)`
+  - `$x ∈ (-\infty,\infty)$`
 
 ### Probability Density Function (PDF)
 
 $$
  f(x; \mu, \sigma^2) =
- \frac{1}{\sqrt{2\pi\,\sigma^2}} \exp\Bigl(-\frac{(x - \mu)^2}{2\,\sigma^2}\Bigr).
+ \frac{1}{\sqrt{2\pi\,\sigma^2}}^\Bigl(-\frac{(x - \mu)^2}{2\,\sigma^2}\Bigr).
 $$
 
 ### Cumulative Distribution Function (CDF)
