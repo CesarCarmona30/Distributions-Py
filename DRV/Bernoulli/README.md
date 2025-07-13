@@ -7,10 +7,10 @@
 $$x \sim \mathrm{Bernoulli}(p)\quad\text{or}\quad\mathrm{Bern}(x; p)$$
 
 - **Parameter**
- – `p` : probability of success, with 0 ≤ p ≤ 1 (we usually write q = 1 – p for the failure probability)
+  – `p` : probability of success, with 0 ≤ p ≤ 1 (we usually write q = 1 – p for the failure probability)
 
-- **Suport**
- - `x = 0` (failure) or `x = 1` (success)
+- **Support**
+  - `x = 0` (failure) or `x = 1` (success)
 
 ### Probability Mass Function (PMF)
 
