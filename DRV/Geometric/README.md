@@ -17,7 +17,7 @@ $$P(X = x) = pq^{x-1}$$
 
 ### Cumulative Distribution Funtion (CDF)
 
-$$P(X \le x) = \sum_{i = 0}{x} pq^{i-1}$$
+$$P(X \le x) = \sum_{i = 0}^{x} pq^{i-1}$$
 
 ### Mean and Variance
 
