@@ -1,4 +1,4 @@
-# Binomial Negative (Pascal) Distrbution
+# Binomial Negative (Pascal) Distribution
 
 The **Negative Binomial distribution** (also known as the Pascal distribution when the number of successes is integer) models the number of failures before the $k$-th success in a sequence of independent Bernoulli(p) trials.
 
