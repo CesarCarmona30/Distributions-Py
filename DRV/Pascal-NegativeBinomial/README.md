@@ -13,7 +13,7 @@ The **Negative Binomial distribution** (also known as the Pascal distribution wh
 $$X \sim \mathrm{NB}(k, p)\quad\text{or}\quad \mathrm{NBin}(x; k, p)$$
 
 - **Parameters**
- - `x`: number of failures before the $k^{\text{th}}$
+ - `x`: number of failures before the $k^{\text{th}}$ success
  - `k`: number of success (integer, n ≥ 0)
  - `p`: probability of success on each trial (0 ≤ p ≤ 1)
 
@@ -29,3 +29,4 @@ $$F(k) = P(X \le x) = \sum_{i=0}^{x} \binom{k + i - 1}{k - 1} p^k (1 - p)^i$$
 
 - Mean: $E[X] = \frac{k\(1-p\)}{p}$
 - Variance: $Var(X) = \frac{k\(1-p\)}{p^2}$
+- **Standard Deviation: $\sqrt{\mathrm{Var}(X)}$
