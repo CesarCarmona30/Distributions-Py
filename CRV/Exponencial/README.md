@@ -37,6 +37,6 @@ $$
 
 ### Mean and Variance
 
-- **Mean:** \(E[X] = 1/\lambda\)
-- **Variance:** \(\mathrm{Var}(X) = 1/\lambda^2\)
-- **Standard Deviation:** \(\sigma = 1/\lambda\)
+- **Mean:** $E[X] = \lambda$
+- **Variance:** $\mathrm{Var}(X) = \lambda^2$
+- **Standard Deviation:** $\sigma = \lambda$
