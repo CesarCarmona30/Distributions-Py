@@ -26,7 +26,7 @@ $$
 ### Cumulative Distribution Function (CDF)
 
 $$
- P(a \le X \ls b) = F(x; \mu, \sigma) =
+ P(a \le X \le b) = F(x; \mu, \sigma) =
  \frac{1}{\sqrt{2\pi\sigma}} \int_{a}{b} e^{\Bigl(-\frac{(x - \mu)^2}{2\sigma^2}\Bigr)}.
 $$
 
