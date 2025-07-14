@@ -6,7 +6,7 @@ Use the Normal distribution to model measurement errors, test scores, or any phe
 
 ## Theory
 
-$$X \sim N(\mu, \sigma^2)\quad\text{or}\quad f(x; \mu, \sigma^2)$$
+$$X \sim N(\mu, \sigma)\quad\text{or}\quad f(x; \mu, \sigma)$$
 
 - **Parameters**
 
@@ -14,25 +14,26 @@ $$X \sim N(\mu, \sigma^2)\quad\text{or}\quad f(x; \mu, \sigma^2)$$
   - `σ > 0`: standard deviation (real)
 
 - **Support**
-  - `$x ∈ (-\infty,\infty)$`
+  - `x` $∈ (-\infty,\infty)$
 
 ### Probability Density Function (PDF)
 
 $$
- f(x; \mu, \sigma^2) =
- \frac{1}{\sqrt{2\pi\sigma}}e^{\Bigl(-\frac{(x - \mu)^2}{2\,\sigma^2}\Bigr)}s.
+ f(x; \mu, \sigma) =
+ \frac{1}{\sqrt{2\pi\sigma}}e^{\Bigl(-\frac{(x - \mu)^2}{2\sigma^2}\Bigr)}.
 $$
 
 ### Cumulative Distribution Function (CDF)
 
 $$
- F(x; \mu, \sigma^2) = \frac{1}{2}\Bigl[1 + \mathrm{erf}\Bigl(\frac{x - \mu}{\sigma\sqrt{2}}\Bigr)\Bigr].
+ P(a \le X \ls b) = F(x; \mu, \sigma) =
+ \frac{1}{\sqrt{2\pi\sigma}} \int_{a}{b} e^{\Bigl(-\frac{(x - \mu)^2}{2\sigma^2}\Bigr)}.
 $$
 
 ### Mean and Variance
 
-- **Mean:** \(E[X] = \mu\)
-- **Variance:** \(\mathrm{Var}(X) = \sigma^2\)
-- **Standard Deviation:** \(σ\)
+- **Mean:** $\(E[X] = \mu\)$
+- **Variance:** $\(\mathrm{Var}(X) = \sigma^2\)$
+- **Standard Deviation:** $\sigma$
 
 > **Special case:** Standard Normal when \(μ=0, σ=1\).
