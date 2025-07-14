@@ -27,7 +27,7 @@ $$
 
 $$
  P(a \le X \le b) = F(x; \mu, \sigma) =
- \frac{1}{\sqrt{2\pi\sigma}} \int_{a}{b} e^{\Bigl(-\frac{(x - \mu)^2}{2\sigma^2}\Bigr)}.
+ \frac{1}{\sqrt{2\pi\sigma}} \int_{a}^{b} e^{\Bigl(-\frac{(x - \mu)^2}{2\sigma^2}\Bigr)}.
 $$
 
 ### Mean and Variance
