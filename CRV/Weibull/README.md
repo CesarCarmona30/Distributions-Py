@@ -6,12 +6,12 @@ Use the Weibull distribution for modeling lifetimes of products, materials, or s
 
 ## Theory
 
-$$X \sim \mathrm{Weibull}(k, \lambda)\quad\text{or}\quad f(x; k, \lambda)$$
+$$X \sim \mathrm{Weibull}(\alpha, \beta)\quad\text{or}\quad f(x; \alpha, \beta)$$
 
 - **Parameters**
 
-  - `k > 0`: shape parameter (real)
-  - `λ > 0`: scale parameter (real)
+  - $\alpha$ > 0: shape parameter (real)
+  - $\beta$ > 0: scale parameter (real)
 
 - **Support**
   - `x ≥ 0`
@@ -19,25 +19,25 @@ $$X \sim \mathrm{Weibull}(k, \lambda)\quad\text{or}\quad f(x; k, \lambda)$$
 ### Probability Density Function (PDF)
 
 $$
- f(x; k, \lambda) =
+ f(x; \alpha, \beta) =
  \begin{cases}
-   \frac{k}{\lambda}(x/\lambda)^{k-1}e^{-(x/\lambda)^k}, & x \ge 0, \\
-   0, & \text{otherwise}
+   \frac{\alpha}{\beta^{\alpha}} x^{\alpha-1} e^{-(\frac{x}{\beta})^\alpha}, & x > 0, \alpha > 0, \beta > 0 \\
+   0, & x \le 0
  \end{cases}
 $$
 
 ### Cumulative Distribution Function (CDF)
 
 $$
- F(x; k, \lambda) =
+ F(x; \alpha, \beta) =
  \begin{cases}
-   1 - e^{-(x/\lambda)^k}, & x \ge 0, \\
+   1 - e^{-(x/\beta)^\alpha}, & x \ge 0, \\
    0, & x < 0
  \end{cases}
 $$
 
 ### Mean and Variance
 
-- **Mean:** \(E[X] = \lambda\,\Gamma(1 + 1/k)\)
-- **Variance:** \(\mathrm{Var}(X) = \lambda^2[\Gamma(1 + 2/k) - (\Gamma(1 + 1/k))^2]\)
-- **Standard Deviation:** \(σ = \sqrt{\mathrm{Var}(X)}\)
+- **Mean:** $E[X] = \beta\Gamma(1 + \frac{1}{\alpha})$
+- **Variance:** $\mathrm{Var}(X) = \beta^2[\Gamma(1 + \frac{1}{\alpha}) - (\Gamma(1 + \frac{1}{\alpha}))^2]$
+- **Standard Deviation:** $\sigma = \sqrt{\mathrm{Var}(X)}$
