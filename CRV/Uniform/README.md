@@ -41,4 +41,4 @@ $$
 
 - **Mean:** $(E[X] = \frac{A + B}{2}$
 - **Variance:** $\mathrm{Var}(X) = \frac{(B - A)^2}{12}$
-- **Standard Deviation:** $\sigma = \sqrt{\frac{(B - A)^2}{12}}$
+- **Standard Deviation:** $\sigma = \frac{(B - A)^2}{\sqrt{12}}$
