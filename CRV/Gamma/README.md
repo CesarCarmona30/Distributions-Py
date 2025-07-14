@@ -6,12 +6,12 @@ Use the Gamma distribution for sums of k independent Exponential(λ) random vari
 
 ## Theory
 
-$$X \sim \Gamma(k, \theta)\quad\text{or}\quad f(x; k, \theta)$$
+$$X \sim \Gamma(\alpha, \beta)\quad\text{or}\quad f(x; \alpha, \beta)$$
 
 - **Parameters**
 
-  - `k > 0`: shape parameter (real)
-  - `θ > 0`: scale parameter (real)
+  - $\alpha$ > 0: shape parameter (real)
+  - $\beta$ > 0: scale parameter (real)
 
 - **Support**
   - `x ≥ 0`
@@ -19,25 +19,25 @@ $$X \sim \Gamma(k, \theta)\quad\text{or}\quad f(x; k, \theta)$$
 ### Probability Density Function (PDF)
 
 $$
- f(x; k, \theta) =
+ f(x; \alpha, \beta) =
  \begin{cases}
-   \frac{1}{\Gamma(k)\,\theta^k} \, x^{k-1} \, e^{-x/\theta}, & x \ge 0, \\
+   \frac{1}{\beta^{\alpha} \Gamma(\alpha)} x^{\alpha - 1} e^{\frac{-x}{\beta}}, & x \ge 0, \\
    0, & \text{otherwise}
  \end{cases}
 $$
 
-where \(\Gamma(k)=\int_0^\infty t^{k-1}e^{-t}dt\).
+where $\Gamma(\alpha)=\int_{0}^{\infty} x^{\alpha - 1} e^{-x}dx$.
 
 ### Cumulative Distribution Function (CDF)
 
 $$
- F(x; k, \theta) = \frac{1}{\Gamma(k)}\,\gamma\bigl(k, x/\theta\bigr),
+ F(x; \alpha, \beta) = \frac{1}{\Gamma(\alpha)}\,\gamma\bigl(\alpha, x \beta\bigr),
 $$
 
-where \(\gamma(s,z)=\int_0^z t^{s-1}e^{-t}dt\).
+where $\gamma(s,z)=\int_{0}^{z} x^{s - 1} e^{-x}dx$
 
 ### Mean and Variance
 
-- **Mean:** \(E[X] = k\,\theta\)
-- **Variance:** \(\mathrm{Var}(X) = k\,\theta^2\)
-- **Standard Deviation:** \(\sigma = \sqrt{k}\,\theta\)
+- **Mean:** $E[X] = \alpha \beta$
+- **Variance:** $\mathrm{Var}(X) = \sigma^2 = \alpha \beta^2$
+- **Standard Deviation:** $\sigma = \sqrt{\alpha \beta^2}$
