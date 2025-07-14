@@ -39,5 +39,5 @@ $$
 ### Mean and Variance
 
 - **Mean:** $E[X] = \beta\Gamma(1 + \frac{1}{\alpha})$
-- **Variance:** $\mathrm{Var}(X) = \beta^2[\Gamma(1 + \frac{1}{\alpha}) - (\Gamma(1 + \frac{1}{\alpha}))^2]$
+- **Variance:** $\mathrm{Var}(X) = \beta^2[\Gamma(1 + \frac{2}{\alpha}) - (\Gamma(1 + \frac{1}{\alpha}))^2]$
 - **Standard Deviation:** $\sigma = \sqrt{\mathrm{Var}(X)}$
