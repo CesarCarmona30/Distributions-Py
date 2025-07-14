@@ -39,4 +39,4 @@ $$
 
 - **Mean:** $E[X] = \lambda$
 - **Variance:** $\mathrm{Var}(X) = \lambda^2$
-- **Standard Deviation:** $\sigma = \lambda$
+- **\*Standard Deviation:** $\sigma = \lambda$
