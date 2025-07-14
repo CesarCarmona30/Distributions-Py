@@ -20,7 +20,7 @@ $$X \sim N(\mu, \sigma^2)\quad\text{or}\quad f(x; \mu, \sigma^2)$$
 
 $$
  f(x; \mu, \sigma^2) =
- \frac{1}{\sqrt{2\pi\,\sigma^2}}^\Bigl(-\frac{(x - \mu)^2}{2\,\sigma^2}\Bigr).
+ \frac{1}{\sqrt{2\pi\sigma}}e^{\Bigl(-\frac{(x - \mu)^2}{2\,\sigma^2}\Bigr)}s.
 $$
 
 ### Cumulative Distribution Function (CDF)
